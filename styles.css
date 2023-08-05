@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+.btn {
+    animation: myanime 2s ease-in-out infinite
+}
+
+@keyframes myanime {
+    from{
+        opacity: 0.2;
+    }
+    to {opacity: 1;}
+}
