@@ -1,6 +1,6 @@
 # Soulin MAIKADUA
 
-A full stack developer
+A full stack developer.
 
 ## Work Experiences
 
