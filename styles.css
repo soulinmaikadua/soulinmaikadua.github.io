@@ -1,16 +1,164 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding:0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 .btn {
-    animation: myanime 2s ease-in-out infinite
+	animation: myanime 2s ease-in-out infinite;
 }
 
 @keyframes myanime {
-    from{
-        opacity: 0.2;
-    }
-    to {opacity: 1;}
+	from {
+		opacity: 0.2;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.progress {
+	position: relative;
+	margin-top: 20px;
+}
+.progress .color {
+	position: absolute;
+	background-color: #ffffff;
+	width: 0px;
+	height: 8px;
+	border-radius: 15px;
+	animation: progress 4s infinite linear;
+}
+@keyframes progress {
+	0% {
+		width: 0%;
+	}
+	25% {
+		width: 50%;
+	}
+	50% {
+		width: 75%;
+	}
+	75% {
+		width: 85%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+.html-progress {
+	position: relative;
+	margin-top: 20px;
+}
+.html-progress .html-color {
+	position: absolute;
+	background-color: #ffffff;
+	width: 0px;
+	height: 8px;
+	border-radius: 15px;
+	animation: htmlprogress 4s infinite linear;
+}
+@keyframes htmlprogress {
+	0% {
+		width: 0%;
+	}
+	25% {
+		width: 50%;
+	}
+	50% {
+		width: 75%;
+	}
+	75% {
+		width: 85%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+.html5::-webkit-progress-value {
+	background-color: #fe6d00;
+}
+
+.css3::-webkit-progress-value {
+	background-color: #059be5;
+}
+.javascript::-webkit-progress-value {
+	background-color: #ffd601;
+}
+.react::-webkit-progress-value {
+	background-color: #61dbfb;
+}
+.vue::-webkit-progress-value {
+	background-color: #3fba84;
+}
+.flutter::-webkit-progress-value {
+	background-color: #5ec8f8;
+}
+.node::-webkit-progress-value {
+	background-color: #4caf50;
+}
+.mysql::-webkit-progress-value {
+	background-color: #f67f18;
+}
+.psq::-webkit-progress-value {
+	background-color: #316192;
+}
+.firebase::-webkit-progress-value {
+	background-color: #ffca28;
+}
+.mongodb::-webkit-progress-value {
+	background-color: #4eb17f;
+}
+.rest::-webkit-progress-value {
+	background-color: #6e49ff;
+}
+.graphql::-webkit-progress-value {
+	background-color: #e535ab;
+}
+.github::-webkit-progress-value {
+	background-color: #ffd601;
+}
+.gitlab::-webkit-progress-value {
+	background-color: #e53936;
+}
+.aws::-webkit-progress-value {
+	background-color: #f67f18;
+}
+
+progress[value] {
+	appearance: none;
+	border: none;
+	width: 100%;
+	height: 10px;
+	background-color: white;
+	border-radius: 3px;
+	position: relative;
+	margin: 0 0 1.5em;
+}
+progress[value]::-webkit-progress-bar {
+	background-color: white;
+}
+
+.progress-bar {
+	background-color: white;
+	width: 100%;
+	height: 10px;
+}
+
+.progress-bar span {
+	background-color: royalblue;
+	border-radius: 3px;
+	display: block;
+	text-indent: -9999px;
+}
+p[data-value] {
+	position: relative;
+}
+
+p[data-value]:after {
+	content: attr(data-value) '%';
+	position: absolute;
+	right: 0;
 }
