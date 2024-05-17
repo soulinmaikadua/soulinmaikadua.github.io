@@ -18,3 +18,21 @@
 	transform: translateX(-50%);
 	margin: 0;
 }
+
+img {
+	user-select: none;
+}
+
+body {
+	user-select: none; /* Standard property */
+	-webkit-user-select: none; /* For webkit-based browsers */
+	-moz-user-select: none; /* For Firefox */
+	-ms-user-select: none; /* For Internet Explorer/Edge */
+}
+
+.non-selectable {
+	user-select: none; /* Standard property */
+	-webkit-user-select: none; /* For webkit-based browsers */
+	-moz-user-select: none; /* For Firefox */
+	-ms-user-select: none; /* For Internet Explorer/Edge */
+}
