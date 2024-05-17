@@ -31,28 +31,7 @@
 
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
-
-		<link rel="stylesheet" href="styles.css" />
-		<style>
-			* {
-				box-sizing: border-box;
-				margin: 0;
-				padding: 0;
-			}
-
-			.btn {
-				animation: myanime 2s ease-in-out infinite;
-			}
-
-			@keyframes myanime {
-				from {
-					opacity: 0.2;
-				}
-				to {
-					opacity: 1;
-				}
-			}
-		</style>
+		<link rel="stylesheet" href="/css/styles.css" />
 	</head>
 
 	<body class="bg-black text-white">
@@ -60,7 +39,7 @@
 		<div class="h-screen relative my-auto">
 			<div class="max-w-screen-xl place-centent-center mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 text-center md:h-screen h-1/2">
 				<div class="mx-auto my-auto">
-					<img src="soulinmaikadua.jpeg" class="md:mt-0 mt-16 rounded-full w-1/2 mx-auto shadow-2xl shadow-green-800 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1" />
+					<img src="/images/soulinmaikadua.jpeg" class="md:mt-0 mt-16 rounded-full w-1/2 mx-auto shadow-2xl shadow-green-800 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1" />
 				</div>
 				<div class="my-auto text-center md:text-start">
 					<h2 class="text-2xl"><span class="text-green-500 text-3xl">Hello,</span> I'm</h2>
@@ -68,42 +47,15 @@
 					<h3 class="text-3xl font-bold text-gray-400">Full Stack Developer</h3>
 					<p class="text-gray-400">I was born on 06.08.1998 in Luangprabang and I am in the process of making the web more beautiful and faster.</p>
 					<p class="text-gray-400">Living in Vientaine Capital, currently working at Computer Science Lab (CSL).</p>
-					<!-- <div class="text-center md:text-left align-center items-center">
-						<div class="flex mt-10 align-center justify-center md:justify-start">
-							<a href="https://wa.me/+8562059510170" target="_blank" class="mr-2">
-								<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M18.6995 36.3991C28.4747 36.3991 36.3991 28.4747 36.3991 18.6995C36.3991 8.92436 28.4747 1 18.6995 1C8.92435 1 1 8.92436 1 18.6995C1 28.4747 8.92435 36.3991 18.6995 36.3991Z" fill="white" />
-									<path d="M18.6995 36.3991C28.4747 36.3991 36.3991 28.4747 36.3991 18.6995C36.3991 8.92436 28.4747 1 18.6995 1C8.92435 1 1 8.92436 1 18.6995C1 28.4747 8.92435 36.3991 18.6995 36.3991Z" fill="#00D95F" fill-opacity="0.1" />
-									<path d="M18.6995 36.899C28.7508 36.899 36.899 28.7509 36.899 18.6995C36.899 8.64823 28.7508 0.500013 18.6995 0.500013C8.64822 0.500013 0.500013 8.64823 0.500013 18.6995C0.500013 28.7509 8.64822 36.899 18.6995 36.899Z" stroke="#00D95F" stroke-opacity="0.2" />
-									<path
-										fill-rule="evenodd"
-										clip-rule="evenodd"
-										d="M18.9975 9H19.0025C24.5163 9 29 13.4862 29 19C29 24.5138 24.5163 29 19.0025 29C16.9688 29 15.0825 28.395 13.5013 27.3475L9.6575 28.5763L10.9038 24.8612C9.705 23.215 9 21.1875 9 19C9 13.485 13.4838 9 18.9975 9ZM22.797 24.9335C23.5709 24.7689 24.5411 24.2052 24.7855 23.5255C25.03 22.8446 25.03 22.2647 24.959 22.1412C24.9017 22.0433 24.7663 21.9791 24.5642 21.8832C24.5115 21.8583 24.4544 21.8312 24.3929 21.8008C24.0952 21.6548 22.6475 20.9502 22.3739 20.8567C22.1054 20.7569 21.8496 20.7918 21.6469 21.0737C21.6084 21.1268 21.5699 21.1801 21.5317 21.233C21.2872 21.5716 21.0514 21.8982 20.8553 22.1063C20.6767 22.2934 20.3854 22.3171 20.141 22.2173C20.1143 22.2064 20.0838 22.1942 20.0496 22.1806C19.6625 22.0267 18.804 21.6853 17.7649 20.7744C16.8884 20.0061 16.2931 19.0496 16.1208 18.7628C15.9517 18.475 16.0976 18.3063 16.2324 18.1503C16.2349 18.1475 16.2374 18.1446 16.2399 18.1417C16.3268 18.0358 16.4112 17.9476 16.496 17.859C16.557 17.7952 16.6181 17.7313 16.6807 17.6603C16.69 17.6498 16.699 17.6395 16.7078 17.6296C16.8406 17.4793 16.9196 17.3898 17.0087 17.2026C17.11 17.0093 17.0379 16.8098 16.9657 16.6626C16.916 16.5595 16.6091 15.8265 16.3457 15.1972C16.233 14.9279 16.1282 14.6776 16.055 14.5038C15.8587 14.0412 15.7092 14.0237 15.4116 14.0112C15.4024 14.0108 15.3932 14.0103 15.3839 14.0099C15.2899 14.0052 15.1862 14 15.0721 14C14.6845 14 14.2805 14.1122 14.0361 14.3579C14.0275 14.3665 14.0186 14.3754 14.0094 14.3847C13.6966 14.6979 13 15.3955 13 16.7861C13 18.1794 14.004 19.5278 14.1898 19.7773C14.1949 19.7842 14.1994 19.7902 14.2032 19.7954C14.2144 19.8098 14.2355 19.8399 14.2662 19.8836C14.6455 20.4245 16.493 23.0589 19.248 24.1828C21.576 25.1331 22.2676 25.0445 22.797 24.9335Z"
-										fill="#00D95F"
-									/>
-								</svg>
-							</a>
-							<a href="https://facebook.com/SouArrowSoulin" target="_blank" class="mr-2">
-								<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M18.7 36.4C28.4754 36.4 36.4 28.4754 36.4 18.7C36.4 8.92456 28.4754 1 18.7 1C8.92456 1 1 8.92456 1 18.7C1 28.4754 8.92456 36.4 18.7 36.4Z" fill="white" />
-									<path d="M18.7 36.4C28.4754 36.4 36.4 28.4754 36.4 18.7C36.4 8.92456 28.4754 1 18.7 1C8.92456 1 1 8.92456 1 18.7C1 28.4754 8.92456 36.4 18.7 36.4Z" fill="#337FFF" fill-opacity="0.1" />
-									<path d="M18.7 36.9C28.7516 36.9 36.9 28.7516 36.9 18.7C36.9 8.64842 28.7516 0.5 18.7 0.5C8.64842 0.5 0.5 8.64842 0.5 18.7C0.5 28.7516 8.64842 36.9 18.7 36.9Z" stroke="#337FFF" stroke-opacity="0.2" />
-									<path d="M23.2763 20.2827L23.8553 16.318H20.3092V13.7526C20.3092 12.6643 20.8158 11.576 22.4079 11.576H24V8.23322C24 8.23322 22.5526 8 21.1053 8C18.2105 8 16.2566 9.86572 16.2566 13.364V16.3958H13V20.3604H16.2566V30C16.9582 30 17.4145 30 18.1382 30C18.7895 30 19.6238 30 20.3092 30V20.2827H23.2763Z" fill="#337FFF" />
-								</svg>
-							</a>
-							<a href="https://github.com/soulinmaikadua" target="_blank">
-								<img src="images/icons/github-mark.png" alt="github" class="w-9 h-9 bg-white rounded" />
-							</a>
-						</div>
-					</div> -->
+					<div class="mt-2 flex">
+						<a href="/windows.html">
+							<img src="/assets/images/icons8-windows-11-240.png" class="h-8 w-8" alt="Windows 11" />
+						</a>
+						<a href="/macos.html">
+							<img src="/assets/images/icons8-apple-logo-240.png" class="h-8 w-8 ml-4" alt="Windows 11" />
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="absolute bottom-5 right-5">
-				<button class="btn p-3 relative bg-green-200 shadow-md shadow-green-300 rounded-full text-center">
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-green-500">
-						<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
-					</svg>
-				</button>
 			</div>
 		</div>
 		<div class="max-w-screen-md md:mx-auto my-32 mx-6">
@@ -232,53 +184,53 @@
 			</div>
 			<div class="mt-10 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4 place-items-center items-center">
 				<div class="h-24 w-24 rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="html.png" alt="" loading="lazy" />
+					<img src="/images/html.png" alt="" loading="lazy" />
 				</div>
 				<div class="h-24 w-24 rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="css.png" alt="" loading="lazy" />
+					<img src="/images/css.png" alt="" loading="lazy" />
 				</div>
 				<div class="h-24 w-24 rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="javascript.png" alt="" loading="lazy" />
+					<img src="/images/javascript.png" alt="" loading="lazy" />
 				</div>
 
 				<div class="h-24 w-24 rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="react.png" alt="" loading="lazy" />
+					<img src="/images/react.png" alt="" loading="lazy" />
 				</div>
 				<div class="h-24 w-24 rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="vuejs.png" alt="" loading="lazy" />
+					<img src="/images/vuejs.png" alt="" loading="lazy" />
 				</div>
 				<div class="h-24 w-24 flex items-center rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="flutter.png" alt="" loading="lazy" height="100%" />
+					<img src="/images/flutter.png" alt="" loading="lazy" height="100%" />
 				</div>
 				<div class="h-24 w-24 rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="nodejs.png" alt="" loading="lazy" />
+					<img src="/images/nodejs.png" alt="" loading="lazy" />
 				</div>
 				<div class="h-24 w-24 rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="mysql.png" alt="" loading="lazy" />
+					<img src="/images/mysql.png" alt="" loading="lazy" />
 				</div>
 				<div class="h-24 w-24 rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="postgresql.png" alt="" loading="lazy" />
+					<img src="/images/postgresql.png" alt="" loading="lazy" />
 				</div>
 				<div class="h-24 w-24 rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="firebase.png" alt="" loading="lazy" />
+					<img src="/images/firebase.png" alt="" loading="lazy" />
 				</div>
 				<div class="h-24 w-24 flex items-center rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="mongodb.png" alt="" loading="lazy" />
+					<img src="/images/mongodb.png" alt="" loading="lazy" />
 				</div>
 				<div class="h-24 w-24 rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="api.png" alt="" loading="lazy" />
+					<img src="/images/api.png" alt="" loading="lazy" />
 				</div>
 				<div class="md:col-start-2 h-24 w-24 rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="graphql.png" alt="" loading="lazy" />
+					<img src="/images/graphql.png" alt="" loading="lazy" />
 				</div>
 				<div class="h-24 w-24 rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="github.png" alt="" loading="lazy" />
+					<img src="/images/github.png" alt="" loading="lazy" />
 				</div>
 				<div class="h-24 w-24 rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="gitlab.png" alt="" loading="lazy" />
+					<img src="/images/gitlab.png" alt="" loading="lazy" />
 				</div>
 				<div class="h-24 w-24 rounded-md p-4 bg-white hover:bg-green-100 ease-in-out duration-300 hover:shadow-md hover:shadow-green-300">
-					<img src="aws.png" alt="" loading="lazy" />
+					<img src="/images/aws.png" alt="" loading="lazy" />
 				</div>
 			</div>
 			<div class="relative mt-12">
