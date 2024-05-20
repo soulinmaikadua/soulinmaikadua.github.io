@@ -64,3 +64,36 @@ elements = document.getElementsByClassName("date-history")
 for (let i = 0; i < elements.length; i++) {
 	elements[i].innerHTML = now.toDateString();
 }
+
+// script.js
+const draggable = document.getElementById('sticky-note');
+draggable.addEventListener('mousedown', (e) => {
+
+	e.preventDefault();
+
+	closeStartMenu();
+
+	let shiftX = e.clientX - draggable.getBoundingClientRect().left;
+	let shiftY = e.clientY - draggable.getBoundingClientRect().top;
+
+	function moveAt(pageX, pageY) {
+		draggable.style.left = pageX - shiftX + 'px';
+		draggable.style.top = pageY - shiftY + 'px';
+	}
+
+	function onMouseMove(e) {
+		moveAt(e.pageX, e.pageY);
+	}
+
+	document.addEventListener('mousemove', onMouseMove);
+
+	draggable.onmouseup = () => {
+		console.log('draggable');
+		document.removeEventListener('mousemove', onMouseMove);
+		draggable.onmouseup = null;
+	};
+});
+
+draggable.ondragstart = () => {
+	return false;
+};
